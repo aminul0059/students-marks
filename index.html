@@ -69,6 +69,44 @@
             color: #333;
         }
 
+        /* Animated gradient for the first row */
+        .animated-gradient {
+            animation: gradientAnimation 10s infinite alternate;
+            background: linear-gradient(90deg, 
+                #BDD1C5, 
+                #E9F5DB, 
+                #F4E7FB, 
+                #C8A8E9, 
+                #D4E4D8, 
+                #F5E0E8, 
+                #F1D3E0, 
+                #D1D8E0, 
+                #E8D4C3, 
+                #E8C6D4, 
+                #F5F5E1, 
+                #C7D9D9, 
+                #D6C3E6, 
+                #F1F8D2, 
+                #E4C6A4, 
+                #D7E9D8, 
+                #B3D3E2, 
+                #E5C9B3, 
+                #BFD0E5, 
+                #F3E1C4, 
+                #D4E2F4);
+            background-size: 400% 400%;
+            color: #333; /* Optional: Change text color for better visibility */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 600px) {
             table {
@@ -94,7 +132,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>Azizul hakim Noyon</td><td>26</td></tr>
+            <tr class="animated-gradient"><td>Azizul hakim Noyon</td><td>26</td></tr>
             <tr><td>Mishkatun nur Ritu</td><td>24</td></tr>
             <tr><td>Mohammad Jiha</td><td>24</td></tr>
             <tr><td>Miftahul Jannat</td><td>23</td></tr>
